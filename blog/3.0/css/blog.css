@@ -1,0 +1,49 @@
+.comment{
+    margin-top: 14px;
+}
+
+.comment .comment-header{
+	text-align: center;
+	color: #c0c0c0;
+}
+
+.comment .comment-header .lab{
+	margin-bottom: 0;
+}
+
+.comment .comment-body .comment-main{
+	padding-left: 0;
+	list-style: none;
+}
+
+.comment .comment-body .comment-main .card{
+	border-top: 1px solid #E0E0E0;
+}
+
+
+.comment .comment-body .comment-main .card .c-id{
+	position: absolute;
+	margin-top: 12px;
+}
+.comment .comment-body .comment-main .card .c-id img{
+	width: 40px;
+	height: 40px;
+	border-radius: 0.3rem;
+}
+.comment .comment-body .comment-main .card .c-main{
+	position: relative;
+	margin-left: 44px;
+}
+
+.comment .comment-body .comment-main .card .c-main .c-header .h-title{
+	line-height: 20px;
+	margin-bottom: 6px;
+}
+.comment .comment-body .comment-main .card .c-main .c-header .h-detail{
+	line-height: 20px;
+	color: #b0b0b0;
+}
+
+.comment .comment-body .comment-main .card .c-main .c-content{
+	list-style: none;
+}

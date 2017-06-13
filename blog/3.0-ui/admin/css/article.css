@@ -1,0 +1,4 @@
+.simditor .simditor-body{
+    max-height: 300px;
+    overflow: auto;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../public/bootstrap-3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/config.css"/>
+    <script type="text/javascript" src="../public/simditor-2.3.6/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <title>全局设置</title>
+</head>
+<body>
+<!--导航条开始-->
+<nav class="navbar navbar-default main-navbar">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav menu">
+                <li><a href="index.html">管理员</a></li>
+                <li class="current"><a href="config.html">全局设置</a></li>
+                <li><a href="article.html">博文管理</a></li>
+                <li><a href="#">关于</a></li>
+                <li class="navbar-right">
+                    <a href="#" title="管理员登出">
+                        <span class="glyphicon glyphicon-log-out btn-lg"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--导航条结束-->
+
+<!--主体内容开始-->
+<div class="col-md-2"></div>
+<div class="container col-md-8">
+    <div class="panel panel-chart">
+        <div class="panel-heading">
+            全局设置
+            <a class="btn btn-common btn-sm pull-right" data-toggle="modal" data-target="#myModal" data-set="action=add;cname=;cvalue=;cdesc=;ro=">
+                <span class="glyphicon glyphicon-plus"></span>
+                添加
+            </a>
+        </div>
+        <div class="panel-body">
+            <div class="table-head">
+                <table class="table table-responsive table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="col-md-1">编号</th>
+                        <th class="col-md-5">配置名</th>
+                        <th class="col-md-4">取值</th>
+                        <th class="col-md-2">编辑</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="table-body">
+                <table class="table table-responsive table-bordered">
+                    <tbody>
+                    <tr>
+                        <td class="col-md-1">1</td>
+                        <td class="col-md-5">phblog</td>
+                        <td class="col-md-4">ph1996</td>
+                        <td class="col-md-2">
+                            <a class="btn btn-danger btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-trash"></span>&nbsp;
+                            </a>
+                            <a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal" data-set="cid=0;cname=1;cvalue=2;cdesc=3;ro=readonly;action=mod">
+                                &nbsp;<span class="glyphicon glyphicon-edit"></span>&nbsp;
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-1">1</td>
+                        <td class="col-md-5">phblog</td>
+                        <td class="col-md-4">ph1996</td>
+                        <td class="col-md-2">
+                            <a class="btn btn-danger btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-trash"></span>&nbsp;
+                            </a>
+                            <a class="btn btn-primary btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-edit"></span>&nbsp;
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-1">1</td>
+                        <td class="col-md-5">phblog</td>
+                        <td class="col-md-4">ph1996</td>
+                        <td class="col-md-2">
+                            <a class="btn btn-danger btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-trash"></span>&nbsp;
+                            </a>
+                            <a class="btn btn-primary btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-edit"></span>&nbsp;
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-1">1</td>
+                        <td class="col-md-5">phblog</td>
+                        <td class="col-md-4">ph1996</td>
+                        <td class="col-md-2">
+                            <a class="btn btn-danger btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-trash"></span>&nbsp;
+                            </a>
+                            <a class="btn btn-primary btn-xs">
+                                &nbsp;<span class="glyphicon glyphicon-edit"></span>&nbsp;
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel-footer">
+            111
+        </div>
+    </div>
+</div>
+<!--主体内容结束-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <form class="form-horizontal" action="" target="_self" method="post" data-get="[action]=action_config.html?action=$action">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">修改管理员</h4>
+                </div>
+                <div class="modal-body">
+                    <!--修改管理员ID-->
+                    <input type="hidden" name="cid" value="" data-get="[value]=$cid">
+                    <div class="form-group">
+                        <label for="cname" class="col-sm-2 control-label">配 置 名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="cname" data-get="[value]=$cname;[readonly]=$ro" id="cname" value="" placeholder="请输入配置名" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvalue" class="col-sm-2 control-label">配 置 值</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="cvalue" data-get="[value]=$cvalue" id="cvalue" value="" placeholder="请输入配置值" required="required">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cdesc" class="col-sm-2 control-label">配 置 说 明</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="cdesc" data-get="[value]=$cdesc" id="cdesc" value="" placeholder="请输入配置说明" required="required">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <input type="submit" class="btn btn-primary" value="保存">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/data-poster.js"></script>
+</body>
+</html>

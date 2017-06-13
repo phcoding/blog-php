@@ -1,0 +1,74 @@
+.main > .panel > .panel-body{
+	background-color: rgba(212, 236, 7, 0.2);
+}
+.panel{
+	border-radius: 0;
+}
+
+.panel-body{
+	padding: 20px;
+}
+
+.header{
+	background-image: url(http://pic.pedaily.cn/201412/20141210823342917.jpg);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 0;
+	color: #eee;
+}
+
+.main-navbar{
+	background-color: #fff;
+    border-color: #e7e7e7;
+    border-radius: 0;
+}
+.menu{
+	float: none;
+	text-align: center;
+}
+.menu >li{
+	display: block;
+}
+.menu >li>a{
+	display: block;
+	padding: 0 21px;
+	line-height: 4rem;
+}
+.menu >li.current{
+	border-bottom: 2px solid orange;
+}
+
+.post .post-main .post-header .post-meta{
+	color: #959595;
+}
+.post .post-main .post-header .post-meta .author{
+	color: #e67e22;
+}
+
+.post .post-main .post-media{
+	width: 100%;
+	margin: 20px 0 0;
+}
+.post .post-main .post-media > a > img{
+	width: 100%;
+}
+
+.post .post-main .post-content{
+	word-wrap: break-word;margin: 30px 0;
+}
+
+.post .post-main .post-footer{
+	padding: 21px 0 0;
+	margin-top: 30px;
+	border-top: 1px solid #ccc;
+	font-size: 16px;
+	color: #bbb;
+}
+.post .post-main .post-footer .tag-list >*{
+	padding: 0 0 0 10px;
+}
+.post .post-main .post-footer .user-action > a{
+	padding: 0 10px 0 0;
+}
+

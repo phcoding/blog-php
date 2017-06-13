@@ -1,0 +1,78 @@
+
+body{
+    background-color: #E2E2E2;
+}
+
+/*导航条开始*/
+.main-navbar{
+    background-color: #2d2d2d;
+    border-color: #e7e7e7;
+    border-radius: 0;
+}
+.navbar-nav.menu{
+    float: none;
+    text-align: center;
+}
+.navbar-nav.menu >li{
+    display: block;
+}
+.navbar-nav.menu >li>a{
+    display: block;
+    padding: 0 21px;
+    line-height: 4rem;
+}
+.navbar-nav.menu >li>a:hover{
+    color: #d2d2d2;
+}
+.navbar-nav.menu >li>a:focus{
+    color: #d2d2d2;
+}
+.navbar-nav.menu >li.current{
+    background-color: #3C3C3C;
+    border-bottom: 2px solid orange;
+}
+.navbar-nav.menu >li.current>a{
+    color: #d2d2d2;
+}
+.navbar-nav.menu >li.current>a:hover{
+    color: #fff;
+}
+/*导航条结束*/
+
+/*表格开始*/
+.panel-chart{
+    margin-top: 5%;
+    box-shadow: 2px 2px 6px #808080;
+}
+/*表框头*/
+.panel-chart .panel-heading{
+    height:40px;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+}
+.panel-chart .panel-heading .btn-common{
+    margin-top:-6px;
+}
+
+/*表框主体*/
+.panel-chart .panel-body .table-head{
+    background: #5D5D5D;
+    color: #eee;
+}
+
+/*表框脚*/
+.panel-chart .panel-body .table-body{
+    max-height: 360px;
+    overflow: auto;
+    margin-top: -20px;
+}
+
+.panel-chart .panel-footer{
+    line-height: 10px;
+    border-bottom: 1px solid #eee;
+}
+/*表格结束*/
+
+::-webkit-scrollbar{
+    width:0;
+}

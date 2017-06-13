@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+/*按钮样式*/
+.btn-common{
+	color: #fff;
+	border: 1px solid #e67e22;
+	background-color: #e67e22;
+	transition: all .2s ease-in-out;
+}
+.btn-common:hover{
+	color: #fff;
+	border: 1px solid #303030;
+	background-color: #303030;
+}
+.btn-common:active{
+	color: #fff;
+	border: 1px solid #303030;
+	background-color: #303030;
+}
+.btn-common:focus{
+	color: #fff;
+	border: 1px solid #303030;
+	background-color: #303030;
+}
+
+/*自动隐藏*/
+@media only screen and (min-width: 992px){
+	.auto-hidden{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.auto-hidden{
+		display: none !important;
+	}
+}

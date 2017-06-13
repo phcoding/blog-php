@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../public/bootstrap-3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="../public/simditor-2.3.6/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../public/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <title>管理员登录</title>
+</head>
+<body>
+<div class="main">
+    <div class="col-md-2"></div>
+    <div class="container col-md-8">
+        <div class="panel panel-form">
+            <div class="panel-heading">
+                管理员登录
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" action="login.html?action=login" target="_self" method="post">
+                    <div class="form-group">
+                        <label for="aname" class="col-sm-2 control-label">用 户 名</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="aname" id="aname" placeholder="用户名" required="required">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pawd" class="col-sm-2 control-label">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" name="apawd" id="pawd" placeholder="密码" required="required">
+                        </div>
+                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-offset-2 col-sm-10">-->
+                            <!--<div class="checkbox">-->
+                                <!--<label>-->
+                                    <!--<input type="checkbox"> Remember me-->
+                                <!--</label>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-common">登 录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+</body>
+</html>
